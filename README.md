@@ -45,7 +45,7 @@ nextflow run ../sangro/main.nf \
 There are five possible parameters, which are listed below:
 
 | parameter | description | is required? |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | --input | a file path to the metadata file | yes |
 | --publish-dir | a directory where output will be stored | yes |
 | --masking_threshold | the percentage of missing data required for masking | no |
