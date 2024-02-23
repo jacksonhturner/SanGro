@@ -46,6 +46,7 @@ nextflow run ../sangro/main.nf \
 There are five possible parameters, which are listed below:
 
 | parameter | description | is required? |
+| --- | --- | --- |
 | --input | a file path to the metadata file | yes |
 | --publish-dir | a directory where output will be stored | yes |
 | --masking_threshold | the percentage of missing data required for masking | no |
@@ -70,6 +71,7 @@ This dataset is designed to test the monophyly of *Aedes*, *Anopheles*, and *Cul
 Metadata of sequences is provided below:
 
 | id | organism | NCBI accession number | 
+| --- | --- | --- |
 | Daestiv | *Dixella aestivalis* | NC_029354.1 |
 | Dsubmac | *Dixa submaculata* | KX453764.1 |
 | Acinreus | *Aedes cinreus* | OP828905.1 |
