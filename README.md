@@ -22,12 +22,12 @@ SanGro is a simple phylogenetics pipeline executed through nextflow designed to 
 A metadata .csv file is required to initiate SanGro. This file is structured in the following format:
 
 ```
-id,sequence
+id,gene
 taxonA,/file/path/to/taxonA.fasta
 taxonB,/file/path/to/taxonB.fasta
 ```
 
-The `id` column represents the name of the taxon to be represented in the phylogeny and the `sequence` column denotes a full path to the sequence file.
+The `id` column represents the name of the taxon to be represented in the phylogeny and the `gene` column denotes a full path to the sequence file.
 
 ### Shell script
 
