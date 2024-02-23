@@ -44,13 +44,15 @@ nextflow run ../sangro/main.nf \
 
 There are five possible parameters, which are listed below:
 
-| parameter | description | is required? |
-| :--- | :--- | :--- |
-| --input | a file path to the metadata file | yes |
-| --publish-dir | a directory where output will be stored | yes |
-| --masking_threshold | the percentage of missing data required for masking | no |
-| -profile | a profile detailing computational requirements of job | yes |
-| -resume | if pipeline is suspended and reinitiated, it will begin where it left off | no |
+| parameter | description | is required? | input type | 
+| :--- | :--- | :--- | :--- |
+| --input | a file path to the metadata file | yes | string |
+| --publish-dir | a directory where output will be stored | yes | string |
+| --masking_threshold | the percentage of missing data required for masking | no | value |
+| --no_mafft | bypass the alignment step with mafft, off by default | no | boolean |
+| --mask_data | mask missing data with trimal, defaults to no | no | boolean |
+| -profile | a profile detailing computational requirements of job | yes | string |
+| -resume | if pipeline is suspended and reinitiated, it will begin where it left off | no | N/A |
 
 ### Profiles
 
@@ -69,7 +71,7 @@ This dataset is designed to test the monophyly of *Aedes*, *Anopheles*, and *Cul
 
 Metadata of sequences is provided below:
 
-| id | organism | NCBI accession number | 
+| id | organism | NCBI accession number |
 | --- | --- | --- |
 | Daestiv | *Dixella aestivalis* | NC_029354.1 |
 | Dsubmac | *Dixa submaculata* | KX453764.1 |
