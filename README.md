@@ -1,8 +1,6 @@
-# SanGro
-
 ![sangro](https://github.com/jacksonhturner/SanGro/assets/80480626/be642ebd-b66e-4097-a8f1-cbe7dcba3cde)
 
-SanGro: Phylogenetic Analysis from Sanger Sequences
+# SanGro: Phylogenetic Analysis from Sanger Sequences
 
 ## Description
 
