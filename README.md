@@ -99,6 +99,6 @@ The phylogeny produced by SanGro may be vizualised by importing `trimal.treefile
 
 ## Troubleshooting
 
-The most commonly observed error is the termination of SanGro in the `COLLATE` step of the pipeline. This is often due to the incorrect input of data in the `metadata.csv` input file. If this occurs, ensure this file is correctly populated with sequence information and paths.
+The most commonly observed error is the termination of SanGro in the `PARSE_METADATA` step of the pipeline. This is often due to the incorrect input of data in the `metadata.csv` input file. If this occurs, ensure this file is correctly populated with sequence information and paths.
 
 If other errors are encountered, please submit a comment in the `Issues` tab of this github page so that they may be promptly addressed and resolved. 
