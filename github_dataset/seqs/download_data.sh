@@ -1,0 +1,9 @@
+fasterq-dump NC_029354.1;
+fasterq-dump KX453764.1;
+fasterq-dump OP828905.1;
+fasterq-dump KC855606.1;
+fasterq-dump KM593059.1;
+fasterq-dump KM593057.1;
+fasterq-dump KM592986.1;
+fasterq-dump KC855665.1;
+fasterq-dump KC855664.1

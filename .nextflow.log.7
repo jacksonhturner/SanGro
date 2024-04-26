@@ -1,0 +1,94 @@
+Feb-23 16:34:57.905 [main] DEBUG nextflow.cli.Launcher - $> nextflow run sangro/main.nf --input metadata.csv --publish_dir test_run/ --masking_threshold 0.4 -profile local, eight --mask-data true
+Feb-23 16:34:58.002 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Feb-23 16:34:58.021 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/jturne88/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Feb-23 16:34:58.030 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-23 16:34:58.030 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-23 16:34:58.033 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Feb-23 16:34:58.042 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-23 16:34:58.054 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/nextflow.config
+Feb-23 16:34:58.055 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/nextflow.config
+Feb-23 16:34:58.086 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local,`
+Feb-23 16:34:58.910 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [four, local, eight]
+Feb-23 16:34:58.940 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Feb-23 16:34:58.953 [main] INFO  nextflow.cli.CmdRun - Launching `sangro/main.nf` [fabulous_lamport] DSL2 - revision: 44a931c234
+Feb-23 16:34:58.954 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-23 16:34:58.954 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Feb-23 16:34:58.961 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/jturne88/.nextflow/secrets/store.json
+Feb-23 16:34:58.964 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4fb392c4] - activable => nextflow.secret.LocalSecretsProvider@4fb392c4
+Feb-23 16:34:59.030 [main] DEBUG nextflow.Session - Session UUID: 7a4eb6af-3013-4ce0-9558-227f29179fe9
+Feb-23 16:34:59.031 [main] DEBUG nextflow.Session - Run name: fabulous_lamport
+Feb-23 16:34:59.031 [main] DEBUG nextflow.Session - Executor pool size: 96
+Feb-23 16:34:59.038 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-23 16:34:59.042 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=288; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Feb-23 16:34:59.075 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (17:01 EDT)
+  System: Linux 4.18.0-513.9.1.el8_9.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 17.0.10-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 2147873@centaur.ag.utk.edu [160.36.238.143]
+  CPUs: 96 - Mem: 503 GB (27.7 GB) - Swap: 4 GB (3.5 GB)
+Feb-23 16:34:59.098 [main] DEBUG nextflow.Session - Work-dir: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/test_run/project/work [xfs]
+Feb-23 16:34:59.119 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-23 16:34:59.134 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Feb-23 16:34:59.193 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Feb-23 16:34:59.207 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 97; maxThreads: 1000
+Feb-23 16:34:59.284 [main] DEBUG nextflow.Session - Session start
+Feb-23 16:34:59.291 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/test_run/project/publish/summary/2024-02-23_16-34_trace.html
+Feb-23 16:34:59.542 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Feb-23 16:34:59.941 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:pandas` matches labels `pandas` for process with name PARSE_METADATA
+Feb-23 16:34:59.961 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-23 16:34:59.961 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-23 16:34:59.969 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Feb-23 16:34:59.976 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=96; memory=503 GB; capacity=96; pollInterval=100ms; dumpInterval=5m
+Feb-23 16:34:59.979 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Feb-23 16:35:00.144 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-23 16:35:00.145 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-23 16:35:00.153 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:mafft` matches labels `mafft,big_mem` for process with name MAFFT
+Feb-23 16:35:00.155 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-23 16:35:00.155 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-23 16:35:00.161 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:iqtree` matches labels `iqtree,sup_mem` for process with name IQTREE
+Feb-23 16:35:00.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-23 16:35:00.162 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-23 16:35:00.167 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: TRIMAL, COLLATE, IQTREE, MAFFT, PARSE_METADATA
+Feb-23 16:35:00.171 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Feb-23 16:35:00.180 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PARSE_METADATA
+Feb-23 16:35:00.186 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COLLATE
+Feb-23 16:35:00.187 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MAFFT
+Feb-23 16:35:00.189 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > IQTREE
+Feb-23 16:35:00.192 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_76cb92cd3d1e22d2: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/./modules/metadata.nf
+  Script_5c286d95a65f4275: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/./modules/trimal.nf
+  Script_0f7aa595b6993084: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/./modules/mafft.nf
+  Script_f01a06b5d9d659ac: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/./modules/collate.nf
+  Script_65eaeaf7d32f0f97: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/./modules/iqtree.nf
+  Script_efad1d6f00ab17d2: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/sangro/main.nf
+Feb-23 16:35:00.192 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Feb-23 16:35:00.192 [main] DEBUG nextflow.Session - Session await
+Feb-23 16:35:00.268 [Actor Thread 12] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://quay.io/biocontainers/pandas:1.5.2; path=/home/jturne88/singularity/quay.io-biocontainers-pandas-1.5.2.img
+Feb-23 16:35:00.350 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-23 16:35:00.353 [Task submitter] INFO  nextflow.Session - [aa/05aa89] Submitted process > PARSE_METADATA
+Feb-23 16:35:01.953 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: PARSE_METADATA; status: COMPLETED; exit: 0; error: -; workDir: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/test_run/project/work/aa/05aa898ec57392699caaa005021d8e]
+Feb-23 16:35:01.972 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=288; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Feb-23 16:35:02.006 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-23 16:35:02.007 [Task submitter] INFO  nextflow.Session - [0e/3836bb] Submitted process > COLLATE
+Feb-23 16:35:02.184 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: COLLATE; status: COMPLETED; exit: 0; error: -; workDir: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/test_run/project/work/0e/3836bb363606951f3879ca52465dcb]
+Feb-23 16:35:02.191 [Actor Thread 43] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://quay.io/biocontainers/mafft:7.475--h516909a_0; path=/home/jturne88/singularity/quay.io-biocontainers-mafft-7.475--h516909a_0.img
+Feb-23 16:35:02.200 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-23 16:35:02.201 [Task submitter] INFO  nextflow.Session - [de/52f5d5] Submitted process > MAFFT
+Feb-23 16:35:03.950 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: MAFFT; status: COMPLETED; exit: 0; error: -; workDir: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/test_run/project/work/de/52f5d55978b556739d3c1365a33944]
+Feb-23 16:35:03.958 [Actor Thread 51] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=docker://quay.io/biocontainers/iqtree:2.2.2.7--h21ec9f0_2; path=/home/jturne88/singularity/quay.io-biocontainers-iqtree-2.2.2.7--h21ec9f0_2.img
+Feb-23 16:35:03.967 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-23 16:35:03.968 [Task submitter] INFO  nextflow.Session - [83/64ad84] Submitted process > IQTREE
+Feb-23 16:35:53.532 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: IQTREE; status: COMPLETED; exit: 0; error: -; workDir: /pickett_centaur/project/Moulton_JHT/orthogarden_all/sangro/test_run/project/work/83/64ad84f00936b5460a94c3734cae41]
+Feb-23 16:35:53.545 [main] DEBUG nextflow.Session - Session await > all processes finished
+Feb-23 16:35:53.548 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Feb-23 16:35:53.548 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Feb-23 16:35:53.552 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Feb-23 16:35:53.556 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=50s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Feb-23 16:35:53.556 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Feb-23 16:35:53.557 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Feb-23 16:35:54.056 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Feb-23 16:35:54.177 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Feb-23 16:35:54.186 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Feb-23 16:35:54.186 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

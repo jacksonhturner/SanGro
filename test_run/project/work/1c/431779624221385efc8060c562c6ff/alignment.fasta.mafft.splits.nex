@@ -1,0 +1,133 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=23;
+TAXLABELS
+[1] 'appalachiensis__Coweeta__ALL'
+[2] 'blax__SD__Illumina'
+[3] 'vockerothi__NC__BRP_'
+[4] 'calciphala__LAS__ALL'
+[5] 'fusca__TN__Athens__Illumina_ALL'
+[6] 'inextricata__NC__Curtis_Crk-1__ALL'
+[7] 'Mer_arge__CA__Calco_L_'
+[8] 'Mer_arge__OR__Willamette__ALL'
+[9] 'Mer.arge__WA__MORA-F__ALL'
+[10] 'Mer.idahoensis__FTF__ALL'
+[11] 'Mer.idahoensis__MM__ALL'
+[12] 'Mer_lobata__AZ-MtGr__5E'
+[13] 'Mer_lobata__BC__Cow_Crk__ALL'
+[14] 'Mer-lobata__BH__SD__ALL'
+[15] 'Mer_lobata__CO-Rt._91__ALL'
+[16] 'Mer_lobata__ID_GPine__ALL'
+[17] 'Mer_lobata__ID__Hayden__ALL'
+[18] 'Mer_lobata__SD__BH__ALL'
+[19] 'Mer-lobata__WY__Both_Ends'
+[20] 'Mer_tahoensis__2016__ALL'
+[21] 'Mer.xavia__CA__Watson_Crk__ALL'
+[22] 'Mer_xavia__GVIL_1__ALL'
+[23] 'Mer_xavia__GVIL_2__ALL'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=23 nsplits=95;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	97	 2 3,
+	100	 10,
+	100	 11,
+	100	 10 11,
+	100	 12,
+	100	 15,
+	100	 12 15,
+	100	 13,
+	100	 19,
+	87	 13 19,
+	100	 16,
+	100	 17,
+	67	 16 17,
+	92	 13 16 17 19,
+	100	 14,
+	100	 18,
+	100	 14 18,
+	100	 13 14 16 17 18 19,
+	100	 12 13 14 15 16 17 18 19,
+	100	 21,
+	100	 22,
+	79	 21 22,
+	100	 23,
+	100	 21 22 23,
+	100	 12 13 14 15 16 17 18 19 21 22 23,
+	90	 1 2 3 4 5 6 7 8 9 20,
+	15	 1 4 5 6 7 8 9 20,
+	100	 7,
+	100	 8,
+	100	 9,
+	59	 8 9,
+	100	 7 8 9,
+	100	 20,
+	100	 7 8 9 20,
+	59	 1 4 5 6,
+	100	 5,
+	99	 1 4 6,
+	100	 4,
+	100	 6,
+	1	 4 6,
+	100	 1,
+	19	 2 3 7 8 9 20,
+	21	 22 23,
+	99	 1 6,
+	40	 1 2 3 4 5 6,
+	11	 1 2 3 4 6,
+	40	 7 9,
+	18	 2 3 5,
+	18	 1 4 6 7 8 9 20,
+	3	 7 8 9 10 11 20,
+	8	 5 7 8 9 20,
+	4	 1 2 3 4 6 10 11,
+	3	 13 14 18,
+	7	 13 14 18 19,
+	0	 13 14 17 18 19,
+	5	 13 17 19,
+	6	 17 19,
+	11	 16 17 19,
+	5	 1 2 3 4 6 7 8 9 20,
+	16	 13 16 19,
+	7	 13 14 16 18 19,
+	0	 21 23,
+	0	 13 14 15 16 17 18 19,
+	2	 3 5,
+	2	 1 2 4 6 7 8 9 20,
+	0	 1 2 3 6,
+	0	 12 15 21 22 23,
+	0	 7 8,
+	1	 1 4 5 6 7 8 9 10 11 20,
+	1	 5 7 8 9 10 11 20,
+	0	 2 3 5 7 8 9 10 11 20,
+	2	 1 2 3 4 6 7 8 9 10 11 20,
+	0	 13 14 16 18,
+	0	 8 20,
+	0	 7 8 20,
+	2	 2 3 10 11,
+	0	 2 5,
+	0	 4 7 8 9 20,
+	0	 5 10 11,
+	0	 1 4 6 10 11,
+	0	 1 2 3 4 5 6 10 11,
+	1	 2 7 8 9 20,
+	0	 4 5 7 8 9 20,
+	0	 2 3 4,
+	0	 2 3 5 7 8 9 20,
+	0	 13 17,
+	0	 13 16 17,
+	0	 16 19,
+	0	 1 2 4 5 6 7 8 9 20,
+	0	 3 7 8 9 20,
+	0	 1 2 4 6,
+	0	 2 3 7 8 9 10 11 20,
+	0	 1 2 4 6 7 8 9 10 11 20,
+;
+END; [Splits]
+

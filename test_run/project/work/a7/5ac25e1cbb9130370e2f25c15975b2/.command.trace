@@ -1,0 +1,17 @@
+nextflow.trace/v2
+realtime=85000
+%cpu=995
+cpu_model=AMD EPYC 7402 24-Core Processor
+rchar=197269
+wchar=2302974
+syscr=172
+syscw=4627
+read_bytes=10932224
+write_bytes=2310144
+%mem=0
+vmem=108320
+rss=26448
+peak_vmem=171128
+peak_rss=26448
+vol_ctxt=202
+inv_ctxt=106

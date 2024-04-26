@@ -1,0 +1,316 @@
+IQ-TREE 2.2.2.7 COVID-edition built Jun  7 2023
+
+Input file name: alignment.fasta.mafft
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 255321
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 33 sequences with 2053 nucleotide sites
+Number of constant sites: 977 (= 47.5889% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 977 (= 47.5889% of all sites)
+Number of parsimony informative sites: 930
+Number of distinct site patterns: 722
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+R2       -11906.819   23961.639 +    0.934   23967.251 +    0.936   24378.041 +    0.682
+TVM+F+I+R2       -11911.408   23968.816 -   0.0258   23974.275 -   0.0279   24379.591 +    0.314
+GTR+F+R2         -11916.168   23978.336 - 0.000221   23983.795 - 0.000239   24389.111 -  0.00269
+GTR+F+R3         -11909.704   23969.407 -   0.0192   23975.173 -   0.0178   24391.436 - 0.000842
+GTR+F+I+R3       -11908.622   23969.245 -   0.0208   23975.168 -   0.0179   24396.901 - 5.48e-05
+TIM2+F+I+R2      -11928.613   24001.225 - 2.37e-09   24006.534 - 2.76e-09   24406.373 -  4.8e-07
+TIM+F+I+R2       -11930.113   24004.227 - 5.28e-10   24009.536 - 6.15e-10   24409.375 - 1.07e-07
+TPM2u+F+I+R2     -11937.815   24017.631 - 6.48e-13   24022.792 - 8.14e-13   24417.152 - 2.19e-09
+K3Pu+F+I+R2      -11941.309   24024.617 - 1.97e-14   24029.778 - 2.48e-14   24424.138 - 6.67e-11
+GTR+F+G4         -11968.561   24081.121 - 1.06e-26   24086.430 - 1.24e-26   24486.269 - 2.15e-24
+GTR+F+I+G4       -11966.434   24078.868 - 3.27e-26   24084.327 - 3.54e-26   24489.643 - 3.98e-25
+TIM3+F+I+R2      -11974.840   24093.679 - 1.99e-29   24098.988 - 2.32e-29   24498.827 - 4.03e-27
+TPM3u+F+I+R2     -11986.191   24114.381 - 6.35e-34   24119.542 - 7.97e-34   24513.902 - 2.15e-30
+TN+F+I+R2        -11998.479   24138.957 - 2.93e-39   24144.118 - 3.67e-39   24538.478 - 9.89e-36
+HKY+F+I+R2       -12005.730   24151.461 - 5.64e-42   24156.476 - 7.61e-42   24545.355 - 3.18e-37
+SYM+I+R2         -12127.863   24397.727 - 1.88e-95   24402.888 - 2.37e-95   24797.248 - 6.37e-92
+TVMe+I+R2        -12148.711   24437.423 - 4.52e-104   24442.438 - 6.11e-104   24831.317 - 2.55e-99
+TIMe+I+R2        -12219.739   24577.479 - 1.75e-134   24582.350 - 2.54e-134   24965.746 - 1.64e-128
+TIM2e+I+R2       -12226.802   24591.605 - 1.5e-137   24596.476 - 2.17e-137   24979.872 - 1.41e-131
+K3P+I+R2         -12233.980   24603.959 - 3.11e-140   24608.689 - 4.84e-140   24986.599 - 4.87e-133
+TPM2+I+R2        -12238.771   24613.542 - 2.58e-142   24618.272 - 4.02e-142   24996.182 - 4.04e-135
+TIM3e+I+R2       -12296.488   24730.975 - 8.15e-168   24735.847 - 1.18e-167   25119.242 - 7.66e-162
+TPM3+I+R2        -12318.851   24773.702 - 4.3e-177   24778.431 - 6.69e-177   25156.341 - 6.73e-170
+TNe+I+R2         -12366.004   24868.009 - 1.43e-197   24872.739 - 2.22e-197   25250.649 - 2.24e-190
+K2P+I+R2         -12378.537   24891.075 - 1.4e-202   24895.665 - 2.34e-202   25268.087 - 3.65e-194
+F81+F+I+R2       -12485.570   25109.140 - 6.22e-250   25114.012 - 9.02e-250   25497.407 - 5.84e-244
+GTR+F+I          -12549.894   25243.787 - 3.59e-279   25249.096 - 4.19e-279   25648.935 - 7.29e-277
+JC+I+R2          -12715.748   25563.496 -        0   25567.949 -        0   25934.882 -        0
+GTR+F            -12796.934   25735.867 -        0   25741.028 -        0   26135.388 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R2
+
+Rate parameter R:
+
+  A-C: 1.9477
+  A-G: 20.5691
+  A-T: 8.2513
+  C-G: 1.1254
+  C-T: 30.3982
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3002
+  pi(C) = 0.163
+  pi(G) = 0.1609
+  pi(T) = 0.3759
+
+Rate matrix Q:
+
+  A    -0.847   0.03996    0.4166    0.3904
+  C   0.07359    -1.535    0.0228     1.438
+  G    0.7771   0.02309   -0.8475   0.04731
+  T    0.3118    0.6236   0.02026   -0.9556
+
+Model of rate heterogeneity: Invar+FreeRate with 2 categories
+Proportion of invariable sites: 0.149
+Site proportion and rates:  (0.6477,0.266) (0.2033,4.072)
+
+ Category  Relative_rate  Proportion
+  0         0              0.149
+  1         0.266          0.6477
+  2         4.072          0.2033
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -11900.4156 (s.e. 273.8460)
+Unconstrained log-likelihood (without tree): -11144.8078
+Number of free parameters (#branches + #model parameters): 74
+Akaike information criterion (AIC) score: 23948.8312
+Corrected Akaike information criterion (AICc) score: 23954.4429
+Bayesian information criterion (BIC) score: 24365.2334
+
+Total tree length (sum of branch lengths): 9.1034
+Sum of internal branch lengths: 8.2223 (90.3215% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0005) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'appalachiensis__Coweeta__ALL' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--appalachiensis__Coweeta__ALL
+|
+|                 +--blax__SD__Illumina
+|              +--| (87)
+|              |  +--vockerothi__NC__BRP_
+|           +--| (25)
+|           |  |                                                            +--nrminut
+|           |  |                                                         +--| (94)
+|           |  |                                                         |  +--Mmin
+|           |  +---------------------------------------------------------| (100)
+|           |                                                            |  +--GVIL_MM
+|           |                                                            +--| (90)
+|           |                                                               +--GVIL_xavia
+|        +--| (32)
+|        |  +--rhathyme__ID__Apgar_Crk__ALL
+|     +--| (27)
+|     |  +--fusca__TN__Athens__Illumina_ALL
+|  +--| (88)
+|  |  |        +--Mer_arge__CA__Calco_L_
+|  |  |     +--| (100)
+|  |  |     |  |  +**Mer_arge__OR__Willamette__ALL
+|  |  |     |  +--| (67)
+|  |  |     |     +--Mer.arge__WA__MORA-F__ALL
+|  |  |  +--| (100)
+|  |  |  |  +--Mer_tahoensis__2016__ALL
+|  |  +--| (28)
+|  |     |     +--Mer.idahoensis__FTF__ALL
+|  |     |  +--| (99)
+|  |     |  |  +--Mer.idahoensis__MM__ALL
+|  |     +--| (44)
+|  |        |                       +--lobata_AZ/Cow_Crk
+|  |        |                    +--| (94)
+|  |        |                    |  +**Mer_lobata__BC__Cow_Crk__ALL
+|  |        |                 +--| (85)
+|  |        |                 |  +--Mer-lobata__WY__Both_Ends
+|  |        |              +--| (95)
+|  |        |              |  |  +--Mer_lobata__ID_GPine__ALL
+|  |        |              |  +**| (83)
+|  |        |              |     +--Mer_lobata__ID__Hayden__ALL
+|  |        |           +--| (100)
+|  |        |           |  |  +--SD_lobata
+|  |        |           |  +--| (100)
+|  |        |           |     |  +**Mer-lobata__BH__SD__ALL
+|  |        |           |     +**| (100)
+|  |        |           |        +**Mer_lobata__SD__BH__ALL
+|  |        |        +--| (100)
+|  |        |        |  |  +--Mer_lobata__AZ-MtGr__5E
+|  |        |        |  +--| (100)
+|  |        |        |     +--Mer_lobata__CO-Rt._91__ALL
+|  |        |     +--| (59)
+|  |        |     |  |     +--Mer.xavia__CA__Watson_Crk__ALL
+|  |        |     |  |  +--| (74)
+|  |        |     |  |  |  +--Mer_xavia__GVIL_1__ALL
+|  |        |     |  +--| (100)
+|  |        |     |     +**Mer_xavia__GVIL_2__ALL
+|  |        |  +--| (98)
+|  |        |  |  |  +--Meringo__Jalisco_
+|  |        |  |  +--| (100)
+|  |        |  |     +**Mer.jalisco_ALL
+|  |        +--| (50)
+|  |           +--Narada_Female_2___sinclairi_
++--| (98)
+|  +--calciphala__LAS__ALL
+|
++--inextricata__NC__Curtis_Crk-1__ALL
+
+Tree in newick format:
+
+(appalachiensis__Coweeta__ALL:0.0435398679,((((((blax__SD__Illumina:0.0561564486,vockerothi__NC__BRP_:0.0804559089)87:0.0152775033,((nrminut:0.0999235031,Mmin:0.0854333621)94:0.0538529035,(GVIL_MM:0.0008475663,GVIL_xavia:0.0034377519)90:0.0223555885)100:7.6625330150)25:0.0033387580,rhathyme__ID__Apgar_Crk__ALL:0.0738135655)32:0.0123646422,fusca__TN__Athens__Illumina_ALL:0.1042432331)27:0.0060962700,(((Mer_arge__CA__Calco_L_:0.0026326877,(Mer_arge__OR__Willamette__ALL:0.0000023900,Mer.arge__WA__MORA-F__ALL:0.0012535990)67:0.0008020593)100:0.0365106270,Mer_tahoensis__2016__ALL:0.0690933627)100:0.0515916376,((Mer.idahoensis__FTF__ALL:0.0006412881,Mer.idahoensis__MM__ALL:0.0006086930)99:0.0729427930,((((((((lobata_AZ/Cow_Crk:0.0006090499,Mer_lobata__BC__Cow_Crk__ALL:0.0000020023)94:0.0018303414,Mer-lobata__WY__Both_Ends:0.0035634520)85:0.0018227143,(Mer_lobata__ID_GPine__ALL:0.0006433585,Mer_lobata__ID__Hayden__ALL:0.0019312668)83:0.0000027163)95:0.0025671221,(SD_lobata:0.0006078362,(Mer-lobata__BH__SD__ALL:0.0000012691,Mer_lobata__SD__BH__ALL:0.0000012691)100:0.0000021477)100:0.0023336375)100:0.0160047432,(Mer_lobata__AZ-MtGr__5E:0.0209536721,Mer_lobata__CO-Rt._91__ALL:0.0010840246)100:0.0127756155)100:0.0294843788,((Mer.xavia__CA__Watson_Crk__ALL:0.0052348905,Mer_xavia__GVIL_1__ALL:0.0026318059)74:0.0014903436,Mer_xavia__GVIL_2__ALL:0.0004759865)100:0.0424580706)59:0.0042010027,(Meringo__Jalisco_:0.0006457746,Mer.jalisco_ALL:0.0000022532)100:0.0662699812)98:0.0197800807,Narada_Female_2___sinclairi_:0.1010375963)50:0.0161088740)44:0.0124531325)28:0.0087088039)88:0.0265476241,calciphala__LAS__ALL:0.0675969874)98:0.0197975355,inextricata__NC__Curtis_Crk-1__ALL:0.0519574441);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -11900.471219
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--appalachiensis__Coweeta__ALL
+|
+|                 +--blax__SD__Illumina
+|              +--| (87)
+|              |  +--vockerothi__NC__BRP_
+|           +--| (51)
+|           |  +--rhathyme__ID__Apgar_Crk__ALL
+|        +--| (32)
+|        |  |                                                            +--nrminut
+|        |  |                                                         +--| (94)
+|        |  |                                                         |  +--Mmin
+|        |  +---------------------------------------------------------| (100)
+|        |                                                            |  +--GVIL_MM
+|        |                                                            +--| (90)
+|        |                                                               +--GVIL_xavia
+|     +--| (27)
+|     |  +--fusca__TN__Athens__Illumina_ALL
+|  +--| (88)
+|  |  |        +--Mer_arge__CA__Calco_L_
+|  |  |     +--| (100)
+|  |  |     |  |  +--Mer_arge__OR__Willamette__ALL
+|  |  |     |  +--| (67)
+|  |  |     |     +--Mer.arge__WA__MORA-F__ALL
+|  |  |  +--| (100)
+|  |  |  |  +--Mer_tahoensis__2016__ALL
+|  |  +--| (28)
+|  |     |     +--Mer.idahoensis__FTF__ALL
+|  |     |  +--| (99)
+|  |     |  |  +--Mer.idahoensis__MM__ALL
+|  |     +--| (44)
+|  |        |                       +--lobata_AZ/Cow_Crk
+|  |        |                    +--| (94)
+|  |        |                    |  +--Mer_lobata__BC__Cow_Crk__ALL
+|  |        |                 +--| (85)
+|  |        |                 |  +--Mer-lobata__WY__Both_Ends
+|  |        |              +--| (95)
+|  |        |              |  |  +--Mer_lobata__ID_GPine__ALL
+|  |        |              |  +--| (83)
+|  |        |              |     +--Mer_lobata__ID__Hayden__ALL
+|  |        |           +--| (100)
+|  |        |           |  |  +--SD_lobata
+|  |        |           |  +--| (100)
+|  |        |           |     |  +--Mer-lobata__BH__SD__ALL
+|  |        |           |     +--| (100)
+|  |        |           |        +--Mer_lobata__SD__BH__ALL
+|  |        |        +--| (100)
+|  |        |        |  |  +--Mer_lobata__AZ-MtGr__5E
+|  |        |        |  +--| (100)
+|  |        |        |     +--Mer_lobata__CO-Rt._91__ALL
+|  |        |     +--| (59)
+|  |        |     |  |     +--Mer.xavia__CA__Watson_Crk__ALL
+|  |        |     |  |  +--| (74)
+|  |        |     |  |  |  +--Mer_xavia__GVIL_1__ALL
+|  |        |     |  +--| (100)
+|  |        |     |     +--Mer_xavia__GVIL_2__ALL
+|  |        |  +--| (98)
+|  |        |  |  |  +--Meringo__Jalisco_
+|  |        |  |  +--| (100)
+|  |        |  |     +--Mer.jalisco_ALL
+|  |        +--| (50)
+|  |           +--Narada_Female_2___sinclairi_
++--| (98)
+|  +--calciphala__LAS__ALL
+|
++--inextricata__NC__Curtis_Crk-1__ALL
+
+
+Consensus tree in newick format: 
+
+(appalachiensis__Coweeta__ALL:0.0435378634,((((((blax__SD__Illumina:0.0561444116,vockerothi__NC__BRP_:0.0804371479)87:0.0186821969,rhathyme__ID__Apgar_Crk__ALL:0.0737983937)51:0.0000021454,((nrminut:0.0999007259,Mmin:0.0854307776)94:0.0478254045,(GVIL_MM:0.0008531362,GVIL_xavia:0.0034317657)90:0.0284155884)100:7.6527298724)32:0.0123582817,fusca__TN__Athens__Illumina_ALL:0.1042245734)27:0.0060977971,(((Mer_arge__CA__Calco_L_:0.0026317365,(Mer_arge__OR__Willamette__ALL:0.0000029001,Mer.arge__WA__MORA-F__ALL:0.0012522942)67:0.0008020645)100:0.0365026016,Mer_tahoensis__2016__ALL:0.0690874749)100:0.0515812609,((Mer.idahoensis__FTF__ALL:0.0006411586,Mer.idahoensis__MM__ALL:0.0006073071)99:0.0729277290,((((((((lobata_AZ/Cow_Crk:0.0006079014,Mer_lobata__BC__Cow_Crk__ALL:0.0000029001)94:0.0018282113,Mer-lobata__WY__Both_Ends:0.0035620851)85:0.0018205082,(Mer_lobata__ID_GPine__ALL:0.0006422405,Mer_lobata__ID__Hayden__ALL:0.0019299478)83:0.0000029001)95:0.0025660341,(SD_lobata:0.0006067089,(Mer-lobata__BH__SD__ALL:0.0000029001,Mer_lobata__SD__BH__ALL:0.0000029001)100:0.0000029001)100:0.0023328615)100:0.0160017369,(Mer_lobata__AZ-MtGr__5E:0.0209502032,Mer_lobata__CO-Rt._91__ALL:0.0010825240)100:0.0127742957)100:0.0294774516,((Mer.xavia__CA__Watson_Crk__ALL:0.0052340079,Mer_xavia__GVIL_1__ALL:0.0026308280)74:0.0014892218,Mer_xavia__GVIL_2__ALL:0.0004764636)100:0.0424491503)59:0.0042039490,(Meringo__Jalisco_:0.0006453338,Mer.jalisco_ALL:0.0000029001)100:0.0662548710)98:0.0197819909,Narada_Female_2___sinclairi_:0.1010166888)50:0.0161052478)44:0.0124511937)28:0.0087160681)88:0.0265395435,calciphala__LAS__ALL:0.0675856405)98:0.0197961198,inextricata__NC__Curtis_Crk-1__ALL:0.0519475612);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t alignment.fasta.mafft.treefile -m "GTR{1.94767,20.5691,8.2513,1.12544,30.3982}+F{0.300176,0.162989,0.160925,0.37591}+I{0.149048}+R2{0.64768,0.266047,0.203272,4.07183}" --length 2053
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s alignment.fasta.mafft --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s alignment.fasta.mafft --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Feb 23 14:32:31 2024
+Total CPU time used: 20.674795 seconds (0h:0m:20s)
+Total wall-clock time used: 21.35503192 seconds (0h:0m:21s)
+

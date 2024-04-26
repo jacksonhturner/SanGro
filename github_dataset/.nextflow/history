@@ -1,0 +1,3 @@
+2024-02-23 16:41:13	3.9s	suspicious_fourier	ERR	44a931c234accc6b6cfb0d6447b7a5bd	8d9965d3-0848-4103-b009-35a436d071f5	nextflow run ../sangro/main.nf --input metadata.csv --publish_dir test_run/ --masking_threshold 0.4 -profile local, eight --mask-data true
+2024-02-23 16:42:32	3.6s	naughty_poitras	ERR	44a931c234accc6b6cfb0d6447b7a5bd	ecb094b8-cb83-432d-b9ed-b972018beedc	nextflow run ../sangro/main.nf --input metadata.csv --publish_dir test_run/ --masking_threshold 0.4 -profile local, eight --mask-data true
+2024-02-23 16:43:04	15.7s	pedantic_galileo	OK	44a931c234accc6b6cfb0d6447b7a5bd	920938e7-9f72-4cef-9883-2549d07e530c	nextflow run ../sangro/main.nf --input metadata.csv --publish_dir test_run/ --masking_threshold 0.4 -profile local, eight --mask-data true
