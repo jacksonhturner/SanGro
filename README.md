@@ -1,6 +1,6 @@
 ![sangro](https://github.com/jacksonhturner/SanGro/assets/80480626/be642ebd-b66e-4097-a8f1-cbe7dcba3cde)
 
-# SanGro: Phylogenetic Analysis from Sanger Sequences
+# SanGro: Growing Phylogenetic Trees from Sanger Sequencing Products
 
 SanGro is a simple phylogenetics pipeline executed through nextflow designed to construct a phylogeny from single gene sequences such as Sanger sequencing results or viral genes. It accomplishes this by collating individual sequence files into a multiple sequence file with a custom python script (`COLLATE`), aligning the resulting file with `mafft` (`MAFFT`), masking the alignment for missing data with `trimal` (`TRIMAL`), and creating a ML phylogeny by `iqtree2` (`IQTREE`). 
 
