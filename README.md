@@ -9,7 +9,7 @@ SanGro is a simple phylogenetics pipeline executed through nextflow designed to 
 * Automated through nextflow with minimal user input
 * Designed for single sequences
 * Scalable and customizeable for custom use
-* Fast, often producing trees from sequences in >5 minutes
+* Fast, often producing trees from sequences in <5 minutes
 ## Input/Output
 
 * Input: metadata file, shell script
